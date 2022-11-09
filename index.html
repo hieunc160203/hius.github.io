@@ -1,27 +1,87 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<div class="container-ef">
+  <div class="text"><span>Hiusss</span></div>
+</div>
 <HTML>
  <HEAD>
-  <TITLE> Chà Miii </TITLE>
+  <TITLE> Hius </TITLE>
   <META NAME="Generator" CONTENT="EditPlus">
   <META NAME="Author" CONTENT="">
   <META NAME="Keywords" CONTENT="">
   <META NAME="Description" CONTENT="">
+
   <style>
+    
+.container-ef{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width:300px;
+  height: auto;
+  margin: 20% 40%;
+  align-items: center;
+}
+.text{
+  position: relative;
+  font-size: 2em;
+  background: rgb(250, 250, 250);
+  color: rgb(220, 91, 214);
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-weight: bold;
+  padding: 5px;
+}
+.text span{
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.text:before{
+  content:"";
+  position: absolute;
+  top:0;
+  width:60px;
+  height: 100%;
+  background: rgb(242, 109, 215);
+  animation: thangcover 4s linear infinite;
+}
+@keyframes thangcover {
+  0%{
+    left: 0;
+  }
+  50%{
+    left: calc( 100% - 60px);
+  }
+  100%{
+    left:0;
+  }
+}
+    p{
+      position: absolute;
+      width: 250px;
+      top: 40%;
+      left: 42%;
+    }
+  h1{
+    position: absolute;
+    top: 40%;
+    left: 48%;
+  }
   html, body {
   height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0;  
   background: rgb(249, 249, 249);
 }
 canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+
 }
   </style>
  </HEAD>
  <BODY>
-
   <canvas id="pinkboard"></canvas>
   <script>
   /*
